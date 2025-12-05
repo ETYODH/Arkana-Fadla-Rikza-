@@ -1,158 +1,132 @@
 <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio -arkam</title>
-    <link rel="stylesheet" href="style.css">   
-</head>
-<body>
-    <!-- Navigation -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arkana Portofolio</title>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap"
+      rel="stylesheet"/>
+
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
     <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <a href="#">Portfolio</a>
-            </div>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="nav-toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>==
-            </div>
-        </div>
+      <div class="nav-logo">
+        <a href="#">My Portopolio<span>Arkana</span></a>
+      </div>
+      
+      <div class="nav-item">
+        <a href="#Hero">Home</a>
+        <a href="#about">about me</a>
+        <a href="#myskill">my skill</a>
+        <a href="#myproject">my project</a>
+        <a href="#contact">contact</a> 
+        <a href="#|">|</a>
+        <a href="https://github.com/ETYODH"><i data-feather="github"></i></a>
+        <a href="https://www.instagram.com/arkna_fadla/"><i data-feather="instagram"></i></a>
+
+      </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <h1 class="hero-title">Halo, Saya <span class="highlight"> Arkana Fadla R</span></h1>
-            <p class="hero-description">Web Developer & UI/UX Designer</p>
-            <a href="#projects" class="cta-button">Lihat Project</a>
-        </div>
-    </section>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="greeting">HELLO, I'M</p>
+          <h1>ARKANA FADLA RIKZA</h1>
+          <p class="profession">I'M A WEB DEVELOPER & UI/UX DESIGNER</p>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Saya adalah seorang web developer yang passionate dalam menciptakan website yang menarik dan fungsional. Dengan pengalaman dalam HTML, CSS, JavaScript, dan framework modern, saya siap membantu mewujudkan ide digital Anda.</p>
-                    <div class="skills">
-                        <h3>Skills:</h3>
-                        <div class="skill-tags">
-                            <span class="skill-tag">HTML</span>
-                            <span class="skill-tag">CSS</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">React</span>
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">UI/UX Design</span>
-                        </div>
-                    </div>
-                </div>
+          <div class="social-links">
+            <a href="#"><i data-feather="send"></i></a>
+            <a href="#"><i data-feather="message-circle"></i></a>
+            <a href="#"><i data-feather="instagram"></i></a>
+          </div>
+
+          <section id="about">
+            <h2 class="about-me-title">ABOUT ME</h2>
+          </section>
+
+          <div class="about-box">   
+            <p>
+              Let me introduce myself, my name is Arkana Fadla. I'm a web
+              developer passionate about creating attractive and functional
+              websites. With experience in HTML, CSS, JavaScript, and modern
+              frameworks. I'm ready to help bring your digital ideas to life.
+            </p>
+            <div class="CV">
             </div>
+            <div class="illustration-placeholder">
+              <img src="./images/p.jpg" alt="">
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">My Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image">Project 1</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>E-Commerce Website</h3>
-                        <p>Website e-commerce modern dengan fitur lengkap menggunakan React dan Node.js</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
-                </div>
+      <section class="my-skill" id="myskill">
+        <h2 class="skill-title">MY SKILL</h2>
+        <div class="skill-grid">
+          <div class="skill-item"><img src="./images/js.png" alt="JavaScript" /></div>
+          <div class="skill-item"><img src="./images/html-5.png" alt="HTML5" /></div>
+          <div class="skill-item"><img src="./images/css-3.png" alt="CSS3" /></div>
+          <div class="skill-item"><img src="./images/figma.png" alt="Figma" /></div>
+          <div class="skill-item"><img src="./images/illustrator.png" alt="Adobe Illustrator" /></div>
+          <div class="skill-item"><img src="./images/canva.png" alt="Canva" /></div>
+          <div class="skill-item"><img src="./images/python.png" alt="Python" /></div>
+          <div class="skill-item"><img src="./images/php.png" alt="PHP" /></div>
+        </div>
+      </section>
 
+      <section class="my-project" id="myproject">
+            <h3 class="project-title">MY PROJECT</h3>
+            <div class="project-container">
+                
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image">Project 2</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Landing Page Business</h3>
-                        <p>Landing page responsive untuk bisnis dengan design modern dan animasi menarik</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
+                  <img src="./images/download.jpeg" alt="project 1">
+                    <h3>project 1</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, cosectetur adipiscing elit, sed</p>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image">Project 3</div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Dashboard Admin</h3>
-                        <p>Dashboard admin dengan fitur lengkap untuk manajemen data dan analytics</p>
-                        <div class="project-links">
-                            <a href="#" class="project-link">Live Demo</a>
-                            <a href="#" class="project-link">GitHub</a>
-                        </div>
-                    </div>
+                  <img src="./images/download (14).jpeg" alt="project 2">
+                    <h3>project 2</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, cosectetur adipiscing elit, sed</p>
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Email</h3>
-                        <p>nama@email.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Phone</h3>
-                        <p>+62 123 456 789</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Location</h3>
-                        <p>Jakarta, Indonesia</p>
-                    </div>
+                <div class="project-card">
+                  <img src="./images/download (15).jpeg" alt="project 3">
+                    <h3>project 3</h3>
+                    <p class="project-description">Lorem ipsum dolor sit amet, cosectetur adipiscing elit, sed</p>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Nama Anda" required>
-                    <input type="email" placeholder="Email Anda" required>
-                    <textarea placeholder="Pesan Anda" rows="5" required></textarea>
-                    <button type="submit">Kirim Pesan</button>
-                </form>
-            </div>
-        </div>
-    </section>
+               </div>
+        </section>
+  <section class="contact" id="contact">
+          <h4 class="contact-title">CONTACT</h4>
+          <div class="contact-container"></div>
+          <div class="hero-form">
+            <form  action="https://formspree.io/f/mblwvrzy" method="POST">
+            <label for="name">Nama</label>
+            <input type="text" id="Name" placeholder="Isi Kaga lu ah">
+            <label for="Email">Email</label>
+            <input type="text" id="Email" placeholder="ISI GC LAMA LU">
+            <label for="Message">Message</label>
+            <textarea id="Message" name="Message" rows="4"></textarea>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Portfolio. All rights reserved.</p>
-        </div>
-    </footer>
+            <input type="hidden" name="_format" value="plain">
 
-    <script src="script.js"></script>
-</body>
+            <button type="submit" class="btn-submit">Send Message</button>
+
+            </form>
+          </div>
+        </section>
+    </main>
+
+    <script>
+      feather.replace();
+    </script>
+  </body>
 </html>
