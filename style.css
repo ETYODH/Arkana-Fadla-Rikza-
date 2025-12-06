@@ -260,6 +260,10 @@ margin-bottom: 0.5rem;
  color: var(--warnaAbout);
 }
 
+.about-me-title {
+    margin-top: 30%;
+}
+
 /* ========= MEDIA QUERIES (RESPONSIVE) ========= */
 
 /* 1. layar Desktop  */
