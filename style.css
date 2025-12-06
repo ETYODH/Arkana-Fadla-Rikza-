@@ -4,7 +4,7 @@
     --warnaDUA: rgb(195, 58, 237); /* Ungu Navbar */
     --warnaTeks: rgb(255, 255, 255); /* Putih */
     --warnaAksenIkon: rgb(10, 235, 255); /* Biru muda/Cyan */
-    --warnaBorderSkill: rgb(255, 204, 0); /* Kuning Aksen */
+    --warnaBorderSkill: rgb(255, 242, 0); /* Kuning Aksen */
 }
 /* Base & Reset */
 html { scroll-behavior: smooth; }
@@ -15,17 +15,29 @@ body{
     font-family: 'Bubblegum Sans', sans-serif;
     min-height: 200vh;
 }
-a{ color: var(--warnaTeks); text-decoration: none; }
+a{ color: var(--warnaTeks); 
+    text-decoration: none; }
 
-/* NAVBAR */
+/* navbar nya */
 .navbar{
-    display: flex; justify-content: space-between; align-items: center;
-    padding: 0.5rem 2rem; background-color: var(--warnaDUA);
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0.5rem 2rem; 
+    background-color: var(--warnaDUA);
     position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
 }
-.navbar .nav-logo a{ font-size: 2rem; }
-.navbar .nav-logo a span{ color: rgb(0, 255, 221); }
-.nav-item { display: flex; align-items: center; }
+.navbar .nav-logo a{ 
+    font-size: 2rem; 
+}
+
+.navbar .nav-logo a span{ 
+    color: rgb(0, 255, 221); 
+}
+.nav-item { 
+    display: flex; 
+    align-items: center;
+}
 .navbar .nav-item a { 
     margin: 1rem;
     padding-bottom: 0.2rem; 
@@ -39,119 +51,201 @@ a{ color: var(--warnaTeks); text-decoration: none; }
 
 /* HERO & TITLES */
 .hero {
-    display: flex; flex-direction: column; align-items: center;
-    padding-top: 8rem; text-align: center; margin-bottom: 1rem;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding-top: 8rem; 
+    text-align: center; 
+    margin-bottom: 1rem;
 }
 .hero-content {
-    display: flex; flex-direction: column; align-items: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
     width: 100%;
 }
-.hero .greeting { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.hero .greeting { 
+    font-size: 2rem; 
+    margin-bottom: 0.5rem; 
+}
 .hero h1 {
-    font-size: 5rem; line-height: 1;
+    font-size: 5rem; 
+    line-height: 1;
     text-shadow: 4px 4px 0px var(--warnaAbout); 
     margin-bottom: 0.5rem;
 }
-.hero .profession { font-size: 1.5rem; margin-top: 0.5rem; margin-bottom: 2rem; }
+.hero .profession { 
+    font-size: 2rem; 
+    margin-top: 0.5rem; 
+    margin-bottom: 2rem; 
+}
 .social-links {
-    display: flex; justify-content: center; gap: 1.5rem;
-    padding-bottom: 1rem; margin-bottom: 3rem;
+    display: flex; 
+    justify-content: center; 
+    gap: 1.5rem;
+    padding-bottom: 1rem; 
+    margin-bottom: 3rem;
     border-bottom: 1px solid rgba(74, 133, 251, 0.486);
 }
 .social-links a i {
-    width: 30px; height: 30px; border-radius: 75%; padding: 10px;
+    width: 30px; 
+    height: 30px; 
+    border-radius: 75%; 
+    padding: 10px;
     background-color: var(--warnaAksenIkon);
 }
 .about-me-title, .skill-title, .contact-title, .project-title {
-    font-size: 2rem; padding-bottom: 0.3rem; margin-bottom: 2rem;
-    border-bottom: 4px solid rgb(255, 255, 255); display: inline-block; 
+    font-size: 1.5rem; 
+    padding-bottom: 0.3rem; 
+    margin-bottom: 2rem;
+    border-bottom: 4px solid rgb(255, 255, 255); 
+    display: inline-block; 
 }
 
 /* ABOUT BOX */
 .about-box {
-    display: flex; justify-content: space-around; align-items: center;
-    background-color: var(--warnaAbout); padding: 4.0rem; margin: 3rem auto;
-    border-radius: 50px; text-align: left; max-width: 900px;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center;
+    background-color: var(--warnaAbout); 
+    padding: 4.0rem; 
+    margin: 3rem auto;
+    border-radius: 50px; 
+    text-align: left; 
+    max-width: 1000px;
 }
 .about-box p {
-    font-size: 2.0rem; max-width: 60%; line-height: 1.2;
+    font-size: 2.0rem; 
+    max-width: 1000%; 
+    line-height: 1.2;
 }
 .illustration-placeholder {
-    width: 100%; height: auto;
-}
-.illustration-placeholder img {
-    width: 100%; height: auto; object-fit: contain;
+    width: 100%; 
+    height: auto;
 }
 
 /* MY SKILL SECTION */
-.my-skill { text-align: center; padding-bottom: 4rem; }
+.my-skill { 
+    text-align: center; 
+    padding-bottom: 4rem; }
 .skill-grid {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
-    padding: 1.5rem; margin: 0 auto; max-width: 850px; 
-    background-color: var(--warnaAbout); border-radius: 15px;
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1.5rem;
+    padding: 1.5rem; 
+    margin: 0 auto; 
+    max-width: 850px; 
+    background-color: var(--warnaAbout); 
+    border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 .skill-item {
-    background-color: white; height: 100px; width: 100px;
-    display: flex; justify-content: center; align-items: center;
-    border-radius: 10px; border: 5px solid var(--warnaBorderSkill); 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); overflow: hidden; 
+    background-color: white; 
+    height: 100px; 
+    width: 100px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    border-radius: 10px; 
+    border: 5px solid var(--warnaBorderSkill); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    overflow: hidden; 
 }
-.skill-item img { max-width: 70%; max-height: 70%; object-fit: contain; }
+.skill-item img { 
+    max-width: 70%; 
+    max-height: 70%; 
+    object-fit: contain; }
 
 /* MY PROJECT SECTION */
-.my-project { text-align: center; padding: 4rem 0; }
+.my-project { 
+    text-align: center; 
+    padding: 4rem 0; }
 .project-container {
-    display: flex; justify-content: center; gap: 4rem; 
-    margin: 0 auto; max-width: 1000px; padding: 0 1rem;
+    display: flex; 
+    justify-content: center; 
+    gap: 4rem; 
+    margin: 0 auto; 
+    max-width: 1000px; 
+    padding: 0 1rem;
 }
 .project-card {
-    background-color: var(--warnaAbout); width: 30%; padding: 1.5rem;
-    border-radius: 20px; text-align: center; box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    background-color: var(--warnaAbout); 
+    width: 30%; 
+    padding: 1.5rem;
+    border-radius: 20px; 
+    text-align: center; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
 }
 .project-image-placeholder {
-    background-color: lightgray; height: 150px; border-radius: 10px; margin-bottom: 1rem;
+    background-color: lightgray; 
+    height: 150px; 
+    border-radius: 10px; 
+    margin-bottom: 1rem;
 }
-.project-card h3 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-.project-description { font-size: 1.6rem; line-height: 1.2; color: var(--warnaTeks); }
+.project-card h3 {
+     font-size: 2.5rem; 
+     margin-bottom: 0.5rem; 
+    }
+.project-description { 
+    font-size: 1.6rem; 
+    line-height: 1.2; 
+    color: var(--warnaTeks); }
 
 /* CONTACT SECTION */
 .contact {
-    display: flex; flex-direction: column; align-items: center;
-    padding: 6rem 0 8rem; text-align: center;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    padding: 6rem 0 8rem; 
+    text-align: center;
 }
 .hero-form {
-    background-color: var(--warnaAbout); padding: 4rem 6rem;
-    border-radius: 30px; max-width: 650px; width: 90%;
+    background-color: var(--warnaAbout); 
+    padding: 4rem 6rem;
+    border-radius: 30px; 
+    max-width: 650px; 
+    width: 90%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
 }
 .hero-form label {
-    display: block; font-size: 2rem; margin-bottom: 0.5rem; text-align: left;
+    display: block; 
+    font-size: 2rem; 
+    margin-bottom: 0.5rem; 
+    text-align: left;
 }
 .hero-form input[type="text"], .hero-form textarea,
 .hero-form input[type="email"] {
-    width: 100%; padding: 1rem; margin-bottom: 1rem; border-radius: 15px; 
-    border: none; font-size: 2rem; font-family: 'Bubblegum Sans', sans-serif; color: black;
+    width: 100%; padding: 1rem; 
+    margin-bottom: 1rem; 
+    border-radius: 15px; 
+    border: none; 
+    font-size: 2rem; 
+    font-family: 'Bubblegum Sans', sans-serif; 
+    color: black;
 }
 .hero-form textarea { resize: vertical; }
 
 /* Tombol Send Message */
 .btn-submit {
-    background-color: var(--warnaDUA); color: var(--warnaTeks);
-    border: 3px solid var(--warnaBorderSkill); padding: 0.5rem 2.5rem; 
-    font-size: 2rem; border-radius: 15px; cursor: pointer;
-    font-family: 'Bubblegum Sans', sans-serif; transition: background-color 0.3s, color 0.3s;
-    display: block; margin: 2rem auto 0 auto; 
+    background-color: var(--warnaDUA); 
+    color: var(--warnaTeks);
+    border: 3px solid var(--warnaBorderSkill); 
+    padding: 0.5rem 2.5rem; 
+    font-size: 2rem; 
+    border-radius: 15px; 
+    cursor: pointer;
+    font-family: 'Bubblegum Sans', sans-serif; 
+    display: block; 
+    margin: 2rem auto 0 auto; 
 }
 .btn-submit:hover {
-    background-color: var(--warnaAksenIkon); color: var(--warnaAbout);
+    background-color: var(--warnaAksenIkon); 
+    color: var(--warnaAbout);
 }
 
-/* ===================================== */
 /* ========= MEDIA QUERIES (RESPONSIVE) ========= */
-/* ===================================== */
 
-/* 1. LAYAR BESAR (Desktop > 1200px) */
+/* 1. layar Desktop  */
 @media (min-width: 1200px) {
     .about-box { max-width: 1100px; }
     .about-box p { font-size: 3.5rem; }
@@ -160,7 +254,7 @@ a{ color: var(--warnaTeks); text-decoration: none; }
     .hero-form { max-width: 800px; }
 }
 
-/* 2. LAYAR MENENGAH (Tablet/Laptop Kecil <= 992px) */
+/* 2. layar Tablet/Laptop  */
 @media (max-width: 992px) {
     /* Navbar */
     .navbar .nav-item a { margin: 0.5rem; font-size: 0.95rem; }
@@ -187,12 +281,16 @@ a{ color: var(--warnaTeks); text-decoration: none; }
         max-width: 600px;
     }
     /* Project */
-    .project-container { gap: 2rem; }
+    .project-container { 
+        gap: 2rem; 
+    }
     /* Contact */
-    .hero-form { padding: 3rem 4rem; }
+    .hero-form { 
+        padding: 3rem 4rem; 
+    }
 }
 
-/* 3. LAYAR KECIL (Ponsel <= 768px) */
+/* 3. layar hp  */
 @media (max-width: 768px) {
     /* Navbar: Teks Navbar dikecilkan lagi */
     .navbar .nav-logo a { font-size: 1.5rem; }
